@@ -664,6 +664,40 @@
         </div>
       </section>
     </main>
+
+    <section class="card" style="margin-top: 20px;">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="card-title-dot" style="background:#10b981; box-shadow:0 0 0 4px rgba(16,185,129,0.25);"></span>
+          제휴 및 서비스 문의
+        </div>
+      </div>
+      <p class="card-caption">플래너 관련 제휴나 기능 제안, 버그 제보는 언제든 환영합니다.</p>
+      
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="form">
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="contactName">성함 / 기업명</label>
+            <input type="text" name="name" id="contactName" placeholder="홍길동" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="contactEmail">회신 받을 이메일</label>
+            <input type="email" name="email" id="contactEmail" placeholder="example@email.com" 
+              style="border-radius: 999px; border: 1px solid var(--border); padding: 7px 11px; font-size: 13px; outline: none; background: var(--input-bg); color: var(--text-main);" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="contactMessage">문의 내용</label>
+          <textarea name="message" id="contactMessage" rows="4" placeholder="문의하실 내용을 입력해 주세요." 
+            style="border-radius: 12px; border: 1px solid var(--border); padding: 10px 14px; font-size: 13px; outline: none; background: var(--input-bg); color: var(--text-main); font-family: inherit; resize: vertical;" required></textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 4px;">
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 12px 24px rgba(16,185,129,0.3);">
+            <span>문의 보내기</span>
+          </button>
+        </div>
+      </form>
+    </section>
   </div>
 
   <script>
